@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import fontawesome  -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!-- Blank Template -->
+
+      <!-- MODAL TRIGGER -->
+      <a class="btn waves-effect waves-light modal-trigger" href="#modal1">Modal</a>
+
+      <!-- MODAL -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis laboriosam porro laborum, aliquid ipsa fugiat
+            molestias laudantium quod quo.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+      </div>
+
+
+    
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          // JAVASCRIPT START HERE //
+          $('.modal').modal({
+            dismissible: true,
+            inDuration: 300,
+            outDuration: 200,
+            ready: function (modal, trigger) {
+              console.log('Modal Opened', modal, trigger);
+            }
+          });
+
+
+
+        });
+      </script>
+    </body>
+  </html>
